@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page produit Fiona</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Flex pour l'image et les informations -->
+        <div class="product-container">
+            <!-- Image principale du produit -->
+            <div id="image-section">
+                <img id="main-image" src="img/hero11.jpg" alt="GoPro Hero 11" class="product-image">
+                
+                <!-- Images supplémentaires sous l'image principale -->
+                <div id="thumbnail-container">
+                    <img src="img/hero11.jpg" alt="GoPro Hero 11" class="thumbnail">
+                    <img src="img/hero12.png" alt="GoPro Hero 12" class="thumbnail">
+                </div>
+            </div>
+            
+            <!-- Informations sur le produit -->
+            <div id="info-section">
+                <!-- Section Variantes -->
+                <section id="product-variants">
+                    <h2>Choisissez votre GoPro</h2>
+                    <label for="gopro-select">Variante :</label>
+                    <select id="gopro-select">
+                        <option value="hero11" data-price="5" data-img="img/hero11.jpg">GoPro Hero 11 - 5€/jour</option>
+                        <option value="hero12" data-price="10" data-img="img/hero12.png">GoPro Hero 12 - 10€/jour</option>
+                    </select>
+                </section>
+                
+                <!-- Section Calendrier de Location -->
+                <section id="rental-calendar">
+                    <h2>Calendrier de Location</h2>
+                    
+                    <!-- Affichage du calendrier -->
+                    <div id="calendar">
+                        <!-- Calendrier généré via JavaScript -->
+                    </div>
+
+                    <!-- Sélection des dates -->
+                    <div id="date-selection">
+                        <label for="start-date">Date de début :</label>
+                        <input type="date" id="start-date">
+                        
+                        <label for="end-date">Date de fin :</label>
+                        <input type="date" id="end-date">
+                    </div>
+
+                    <p id="total-price">Total : 0€</p>
+                </section>
+                 <!-- Menu dépliant pour les caractéristiques du produit -->
+                 <section id="product-details">
+                    <h2>Caractéristiques du produit</h2>
+                    <details>
+                        <summary>Cliquez ici pour voir les caractéristiques</summary>
+                        <ul>
+                            <li>Résolution vidéo : 5K</li>
+                            <li>Étanchéité : jusqu'à 10 mètres</li>
+                            <li>Autonomie de la batterie : 2 heures</li>
+                            <li>Stabilisation : HyperSmooth 4.0</li>
+                            <li>Connectivité : Wi-Fi, Bluetooth</li>
+                            <li>Stockage : Carte microSD jusqu'à 512 Go</li>
+                        </ul>
+                    </details>
+                </section>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
